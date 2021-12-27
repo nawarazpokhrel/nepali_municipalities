@@ -1,0 +1,310 @@
+[
+   {
+      "province":"Province 1",
+      "name":"Bhojpur"
+   },
+   {
+      "province":"Province 1",
+      "name":"Dhankuta"
+   },
+   {
+      "province":"Province 1",
+      "name":"Ilam"
+   },
+   {
+      "province":"Province 1",
+      "name":"Jhapa"
+   },
+   {
+      "province":"Province 1",
+      "name":"Khotang"
+   },
+   {
+      "province":"Province 1",
+      "name":"Morang"
+   },
+   {
+      "province":"Province 1",
+      "name":"Okhaldhunga"
+   },
+   {
+      "province":"Province 1",
+      "name":"Panchthar"
+   },
+   {
+      "province":"Province 1",
+      "name":"Sankhuwasabha"
+   },
+   {
+      "province":"Province 1",
+      "name":"Solukhumbu"
+   },
+   {
+      "province":"Province 1",
+      "name":"Sunsari"
+   },
+   {
+      "province":"Province 1",
+      "name":"TapleJung"
+   },
+   {
+      "province":"Province 1",
+      "name":"Terhathum"
+   },
+   {
+      "province":"Province 1",
+      "name":"Udayapur"
+   },
+   {
+      "province":"Province 2",
+      "name":"Bara"
+   },
+   {
+      "province":"Province 2",
+      "name":"Dhanusha"
+   },
+   {
+      "province":"Province 2",
+      "name":"Mahottari"
+   },
+   {
+      "province":"Province 2",
+      "name":"Parsa"
+   },
+   {
+      "province":"Province 2",
+      "name":"Rautahat"
+   },
+   {
+      "province":"Province 2",
+      "name":"Saptari"
+   },
+   {
+      "province":"Province 2",
+      "name":"Sarlahi"
+   },
+   {
+      "province":"Province 2",
+      "name":"Siraha"
+   },
+   {
+      "province":"Province 3",
+      "name":"Bhaktapur"
+   },
+   {
+      "province":"Province 3",
+      "name":"Chitwan"
+   },
+   {
+      "province":"Province 3",
+      "name":"Dhading"
+   },
+   {
+      "province":"Province 3",
+      "name":"Dolakha"
+   },
+   {
+      "province":"Province 3",
+      "name":"Kavrepalanchowk"
+   },
+   {
+      "province":"Province 3",
+      "name":"Kathmandu"
+   },
+   {
+      "province":"Province 3",
+      "name":"Lalitpur"
+   },
+   {
+      "province":"Province 3",
+      "name":"Makwanpur"
+   },
+   {
+      "province":"Province 3",
+      "name":"Nuwakot"
+   },
+   {
+      "province":"Province 3",
+      "name":"Ramechhap"
+   },
+   {
+      "province":"Province 3",
+      "name":"Rasuwa"
+   },
+   {
+      "province":"Province 3",
+      "name":"Sindhuli"
+   },
+   {
+      "province":"Province 3",
+      "name":"Sindhupalchowk"
+   },
+   {
+      "province":"Province 4",
+      "name":"Baglung"
+   },
+   {
+      "province":"Province 4",
+      "name":"Gorkha"
+   },
+   {
+      "province":"Province 4",
+      "name":"Kaski"
+   },
+   {
+      "province":"Province 4",
+      "name":"Lamjung"
+   },
+   {
+      "province":"Province 4",
+      "name":"Manang"
+   },
+   {
+      "province":"Province 4",
+      "name":"Mustang"
+   },
+   {
+      "province":"Province 4",
+      "name":"Myagdi"
+   },
+   {
+      "province":"Province 4",
+      "name":"Nawalparasi (State 4)"
+   },
+   {
+      "province":"Province 4",
+      "name":"Parbat"
+   },
+   {
+      "province":"Province 4",
+      "name":"Syangja"
+   },
+   {
+      "province":"Province 4",
+      "name":"Tanahun"
+   },
+   {
+      "province":"Province 5",
+      "name":"Arghakhanchi"
+   },
+   {
+      "province":"Province 5",
+      "name":"Banke"
+   },
+   {
+      "province":"Province 5",
+      "name":"Bardiya"
+   },
+   {
+      "province":"Province 5",
+      "name":"Dang"
+   },
+   {
+      "province":"Province 5",
+      "name":"Gulmi"
+   },
+   {
+      "province":"Province 5",
+      "name":"Kapilvastu"
+   },
+   {
+      "province":"Province 5",
+      "name":"Nawalparasi West"
+   },
+   {
+      "province":"Province 5",
+      "name":"Palpa"
+   },
+   {
+      "province":"Province 5",
+      "name":"Pyuthan"
+   },
+   {
+      "province":"Province 5",
+      "name":"Rolpa"
+   },
+   {
+      "province":"Province 5",
+      "name":"Rukum (State 5)"
+   },
+   {
+      "province":"Province 5",
+      "name":"Rupandehi"
+   },
+   {
+      "province":"Province 6",
+      "name":"Dailekh"
+   },
+   {
+      "province":"Province 6",
+      "name":"Dolpa"
+   },
+   {
+      "province":"Province 6",
+      "name":"Humla"
+   },
+   {
+      "province":"Province 6",
+      "name":"Jajarkot"
+   },
+   {
+      "province":"Province 6",
+      "name":"Jumla"
+   },
+   {
+      "province":"Province 6",
+      "name":"Kalikot"
+   },
+   {
+      "province":"Province 6",
+      "name":"Mugu"
+   },
+   {
+      "province":"Province 6",
+      "name":"Western Rukum"
+   },
+   {
+      "province":"Province 6",
+      "name":"Salyan"
+   },
+   {
+      "province":"Province 6",
+      "name":"Surkhet"
+   },
+   {
+      "province":"Province 7",
+      "name":"Aachham"
+   },
+   {
+      "province":"Province 7",
+      "name":"Baitadi"
+   },
+   {
+      "province":"Province 7",
+      "name":"Bajhang"
+   },
+   {
+      "province":"Province 7",
+      "name":"Bajura"
+   },
+   {
+      "province":"Province 7",
+      "name":"Dadeldhura"
+   },
+   {
+      "province":"Province 7",
+      "name":"Darchula"
+   },
+   {
+      "province":"Province 7",
+      "name":"Doti"
+   },
+   {
+      "province":"Province 7",
+      "name":"Kailali"
+   },
+   {
+      "province":"Province 7",
+      "name":"Kanchanpur"
+   }
+]
