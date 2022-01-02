@@ -5,8 +5,7 @@ from django.db import models
 
 # Create your models here.
 class Province(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-
+    id = models.UUIDField(primary_key=True, unique=True, default=uuid.uuid4, editable=False)
     country = models.CharField(default='Nepal',max_length=10)
     name = models.CharField(max_length=50)
 
@@ -15,7 +14,7 @@ class Province(models.Model):
 
 
 class District(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.UUIDField(primary_key=True, unique=True, default=uuid.uuid4, editable=False)
     province = models.ForeignKey(to=Province, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
 
@@ -24,8 +23,7 @@ class District(models.Model):
 
 
 class Municipalities(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-
+    id = models.UUIDField(primary_key=True, unique=True, default=uuid.uuid4, editable=False)
     district = models.ForeignKey(to=District, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
 

@@ -5,8 +5,6 @@ N
 apps/municaplities/__init__.py,7/b/7bedf26debbc1355174e671e4098eb70174e96a3
 K
 apps/municaplities/tests.py,1/2/121ec462ae2c4f0df6563ebc883a9e1aca9a22de
-]
--apps/municaplities/migrations/0001_initial.py,3/d/3d2ce59da63396a6ff68a6c616b448099e414912
 P
  apps/municaplities/district.json,8/5/8540bfd01c3fe4ae8dc7a66daadfbc47156b54de
 L

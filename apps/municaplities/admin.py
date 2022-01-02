@@ -7,15 +7,15 @@ from apps.municaplities.models import Province, District, Municipalities
 @admin.register(Province)
 class ProvinceAdmin(admin.ModelAdmin):
     list_display = (
-        'id',
-        'name'
+        # 'id',
+        'name',
     )
 
 
 @admin.register(District)
 class DistrictAdmin(admin.ModelAdmin):
     list_display = (
-        'id',
+        # 'id',
         'name',
         'province'
     )
@@ -23,7 +23,7 @@ class DistrictAdmin(admin.ModelAdmin):
 @admin.register(Municipalities)
 class DistrictAdmin(admin.ModelAdmin):
     list_display = (
-        'id',
+        # 'id',
         'name',
         'district'
     )
