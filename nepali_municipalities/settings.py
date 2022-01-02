@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+
+import django
 from dotenv import load_dotenv
 import os
 
@@ -112,7 +114,7 @@ DATABASES = {
 
     'default': {
 
-        'ENGINE': env('DJANGO_DATABASE_ENGINE'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
         'NAME': env('DJANGO_DATABASE_NAME'),
 
