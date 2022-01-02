@@ -24,11 +24,10 @@ schema_view = get_schema_view(
     openapi.Info(
         title="Municaplites Resource API",
         default_version='v1',
-        description="Flight Resource API",
+        description="Municaplites Resource API",
     ),
 )
 from apps.municaplities import views
-import debug_toolbar
 
 urlpatterns = [
     path(
@@ -38,8 +37,8 @@ urlpatterns = [
     ),
     path('admin/', admin.site.urls),
     path('municipalities/add', views.CreateMunicipalites.as_view()),
-    path('municipalities/search', views.ListMunicipalitiesView.as_view()),
-    path('municipalities/all-data', views.ListAllDataView.as_view()),
+    # path('municipalities/search', views.ListMunicipalitiesView.as_view()),
+    path('municipalities/all/list', views.ListAllDataView.as_view()),
 ]
 if settings.DEBUG:
     import debug_toolbar
