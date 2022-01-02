@@ -15,7 +15,9 @@ from pathlib import Path
 import django
 from dotenv import load_dotenv
 import os
-
+import environ
+environ.Env.read_env()
+# I replaced the secret key line with this
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import environ
 import django_heroku
@@ -29,7 +31,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("DJANGO_SECRET_KEY", default='%ify^q7jg*o7(5me*g%+ae-7_1iy)gey*#eo%3c##-=1d=6mb')
+# SECRET_KEY = env("DJANGO_SECRET_KEY", default='%ify^q7jg*o7(5me*g%+ae-7_1iy)gey*#eo%3c##-=1d=6mb')
+SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
