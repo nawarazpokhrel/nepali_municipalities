@@ -16,6 +16,7 @@ import django
 from dotenv import load_dotenv
 import os
 import environ
+
 environ.Env.read_env()
 # I replaced the secret key line with this
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -32,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = env("DJANGO_SECRET_KEY", default='%ify^q7jg*o7(5me*g%+ae-7_1iy)gey*#eo%3c##-=1d=6mb')
-SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+SECRET_KEY = env('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -169,7 +170,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = os.path.join(STATIC_ROOT,'static')
+STATICFILES_DIRS = os.path.join(STATIC_ROOT, 'static', )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

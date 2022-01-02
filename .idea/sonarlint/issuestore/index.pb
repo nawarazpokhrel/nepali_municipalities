@@ -5,8 +5,6 @@ Y
 )apps/municaplities/migrations/__init__.py,3/3/3377f3e44ce44cb988f7ed478b4004f6a26d7b37
 N
 apps/municaplities/__init__.py,7/b/7bedf26debbc1355174e671e4098eb70174e96a3
-9
-	manage.py,3/1/3156ad13e4d695cd526bbb7b031016ecba842270
 K
 apps/municaplities/tests.py,1/2/121ec462ae2c4f0df6563ebc883a9e1aca9a22de
 ]
