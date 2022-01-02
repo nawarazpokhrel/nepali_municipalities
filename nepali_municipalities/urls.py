@@ -38,7 +38,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('municipalities/add', views.CreateMunicipalites.as_view()),
     # path('municipalities/search', views.ListMunicipalitiesView.as_view()),
-    path('municipalities/all/list', views.ListAllDataView.as_view()),
+    path('api/v1/municipalities/all/list', views.ListAllDataView.as_view()),
 ]
 if settings.DEBUG:
     import debug_toolbar
