@@ -4,9 +4,16 @@ from django.db import models
 
 
 # Create your models here.
-class Province(models.Model):
-    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+from django_extensions.db.fields import ShortUUIDField
 
+
+class Province(models.Model):
+    id = ShortUUIDField(
+        primary_key=True,
+        auto=True,
+        editable=False,
+        unique=True,
+    )
     country = models.CharField(default='Nepal',max_length=10)
     name = models.CharField(max_length=50)
 
@@ -15,8 +22,12 @@ class Province(models.Model):
 
 
 class District(models.Model):
-    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
-
+    id = ShortUUIDField(
+        primary_key=True,
+        auto=True,
+        editable=False,
+        unique=True,
+    )
     province = models.ForeignKey(to=Province, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
 
@@ -25,8 +36,12 @@ class District(models.Model):
 
 
 class Municipalities(models.Model):
-    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
-
+    id = ShortUUIDField(
+        primary_key=True,
+        auto=True,
+        editable=False,
+        unique=True,
+    )
     district = models.ForeignKey(to=District, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
 
