@@ -135,3 +135,6 @@ GitHub.sublime-settings
 !.vscode/launch.json
 !.vscode/extensions.json
 .history
+/apps/municaplities/district.json
+/apps/municaplities/municipalities.json.json
+/apps/municaplities/prades.json.json
