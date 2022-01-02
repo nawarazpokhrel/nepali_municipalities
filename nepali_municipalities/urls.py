@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf import settings
-from django.conf.urls import url
+from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path, include
 from drf_yasg.views import get_schema_view
@@ -45,6 +45,6 @@ if settings.DEBUG:
     import debug_toolbar
 
     urlpatterns = [
-                      url('__debug__/', include(debug_toolbar.urls)),
+                      path('__debug__/', include(debug_toolbar.urls)),
                   ] + urlpatterns
     SHOW_TOOLBAR_CALLBACK = True
