@@ -11,7 +11,15 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+import environ
+import django_heroku
+
+env = environ.Env()
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -19,38 +27,52 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_#+e49ejgsh6g-um6xn+6@2nuw6lk3wa+uh+i+9107)s3&9b=3'
+SECRET_KEY = env("DJANGO_SECRET_KEY", default='%ify^q7jg*o7(5me*g%+ae-7_1iy)gey*#eo%3c##-=1d=6mb')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
-INSTALLED_APPS = [
+DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+]
+
+THIRD_PARTY_APPS = [
     'rest_framework',
-    'apps.municaplities.apps.MunicaplitiesConfig',
     'django_filters',
     'drf_yasg',
-    'debug_toolbar'
+    'debug_toolbar',
+    'corsheaders'
 ]
+
+LOCAL_APPS = [
+    'apps.municaplities.apps.MunicaplitiesConfig',
+
+]
+INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
 ]
 
 ROOT_URLCONF = 'nepali_municipalities.urls'
@@ -86,10 +108,23 @@ WSGI_APPLICATION = 'nepali_municipalities.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': env('DJANGO_DATABASE_ENGINE'),
+
+        'NAME': env('DJANGO_DATABASE_NAME'),
+
+        'USER': env('DJANGO_DATABASE_USER'),
+
+        'PASSWORD': env('DJANGO_DATABASE_PASSWORD'),
+
+        'HOST': env('DJANGO_DATABASE_HOST'),
+
+        'PORT': '5432',
+
     }
+
 }
 
 # Password validation
@@ -127,8 +162,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = os.path.join(STATIC_ROOT,'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# django_heroku.settings(locals)
+
+django_heroku.settings(locals())

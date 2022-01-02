@@ -13,7 +13,7 @@ from drf_yasg.utils import swagger_auto_schema
 
 
 class CreateMunicipalites(APIView):
-    permission_classes = [IsAdminUser,]
+    # permission_classes = [IsAdminUser,]
     def post(self, request, *args, **kwargs):
         usecases.AddMunicipalities(
         ).execute()

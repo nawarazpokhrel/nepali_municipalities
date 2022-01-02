@@ -37,7 +37,7 @@ urlpatterns = [
         name='api-docs'
     ),
     path('admin/', admin.site.urls),
-    path('municipalities', views.CreateMunicipalites.as_view()),
+    path('municipalities/add', views.CreateMunicipalites.as_view()),
     path('municipalities/search', views.ListMunicipalitiesView.as_view()),
     path('municipalities/all-data', views.ListAllDataView.as_view()),
 ]

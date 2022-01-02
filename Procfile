@@ -1,0 +1,1 @@
+web: gunicorn nepali_municipalities.wsgi --log-file-
