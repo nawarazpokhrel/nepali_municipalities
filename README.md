@@ -1,6 +1,6 @@
 # Introduction
 
-Nepali Municipalities  was built from the  with  JSON API that makes it easy for developers and basically during Kyc Form fill up by user.
+Nepali Municipalities  was built   with  Django Rest API that makes it easy for developers and basically during Kyc Form fill up by user.
 
 These docs describe how to use the [Nepali Municpalities](https://nepali-municipalities.herokuapp.com/api/docs/) API. We hope you enjoy these docs, and please don't hesitate to [file an issue](https://github.com/nawarazpokhrel/nepali_municipalities) if you see anything missing and 
 if you want any endpoints to be added I am very open to new ideas from you.
